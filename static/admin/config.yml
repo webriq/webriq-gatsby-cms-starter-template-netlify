@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: webriq/netlify-cms-blog-starter-template
+  repo: webriq/webriq-gatsby-cms-starter-template-netlify
 media_folder: static/assets
 public_folder: assets
 logo_url: https://res.cloudinary.com/dnla85pdq/image/upload/v1569561258/webriq/webriq-cms-logo.png
