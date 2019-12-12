@@ -83,7 +83,7 @@ const footer = props => {
 			<div class="copyright">
 				<div class="container">
 					<span>
-						© 2019 All rights reserved. Designed and powered by
+						© 2019 All rights reserved. Designed and powered by {``}
 						<a
 							href="https://webriq.com/"
 							target="_blank"
