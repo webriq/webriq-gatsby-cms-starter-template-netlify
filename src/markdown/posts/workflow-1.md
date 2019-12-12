@@ -1,7 +1,9 @@
 ---
 title: Workflow-1
 publishedDate: 2019-08-05T04:00:48.095Z
-excerpt: This is an excerpt.
+excerpt: >-
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi viverra purus
+  eu lacus tincidunt ultrices. Cras ultrices vitae felis sit amet mollis. 
 metaTitle: Meta Title
 metaKeywords: Meta Keywords
 metaDescription: Meta Description
