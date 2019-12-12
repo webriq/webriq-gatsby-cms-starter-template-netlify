@@ -62,7 +62,7 @@ const footer = props => {
 									<i class="fa fa-twitter" />
 								</a>
 								<a
-									href="http://instagram.com/"
+									href="https://www.instagram.com/"
 									target="_blank"
 									rel="noreferrer noopener"
 								>
