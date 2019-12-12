@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import { Container } from "reactstrap"
+import SEO from "../components/seo"
 const slugify = require("slugify")
 
 class BlogTemplate extends React.Component {
@@ -14,6 +15,10 @@ class BlogTemplate extends React.Component {
 		)
 		return (
 			<Layout>
+				<SEO
+					title={data.markdownRemark.frontmatter.title}
+					description={data.markdownRemark.frontmatter.excerpt}
+				/>
 				<div class="page-headline">
 					<div class="container">
 						<div class="section-heading text-center">

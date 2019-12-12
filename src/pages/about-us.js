@@ -4,7 +4,10 @@ import SEO from "../components/seo"
 
 const SecondPage = () => (
 	<Layout>
-		<SEO title="Page two" />
+		<SEO
+			title="About Us"
+			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		/>
 		<div class="page-headline">
 			<div class="container">
 				<div class="section-heading text-center">

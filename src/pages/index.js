@@ -65,7 +65,7 @@ class IndexPage extends React.Component {
                   <Link
                     class="btn btn-primary mt-2"
                     role="button"
-                    to="about-us"
+                    to="/about-us"
                   >
                     Learn More
                   </Link>
@@ -74,6 +74,7 @@ class IndexPage extends React.Component {
                   <LazyLoadImage
                     class="img-fluid"
                     src="https://source.unsplash.com/user/neotronimz/600x400"
+                    alt="About us"
                   />
                 </div>
               </div>

@@ -2,11 +2,13 @@ import React from "react"
 import Layout from "../components/layout"
 import { graphql, Link } from "gatsby"
 import { Container } from "reactstrap"
+import SEO from "../components/seo"
 
 const slugify = require("slugify")
 
 const Blogs = ({ data }) => (
 	<Layout>
+		<SEO title="Blogs" description={data.site.siteMetadata.description} />
 		<div class="page-headline">
 			<div class="container">
 				<div class="section-heading text-center">
@@ -110,6 +112,13 @@ export default Blogs
 
 export const blogQuery = graphql`
 	query {
+		site {
+			siteMetadata {
+				title
+				author
+				description
+			}
+		}
 		allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" } }) {
 			edges {
 				node {
