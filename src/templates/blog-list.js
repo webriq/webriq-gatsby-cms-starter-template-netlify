@@ -21,7 +21,6 @@ const Blogs = ({ data }) => (
 			<Container>
 				<div class="row justify-content-between">
 					<div class="col-md-7">
-						{console.log(data)}
 						{data.allMarkdownRemark.edges.map(blog => (
 							<div class="blog-item bg-light" key={blog.node.id}>
 								<div class="row">

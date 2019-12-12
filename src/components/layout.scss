@@ -173,42 +173,98 @@ body {
     padding-bottom: 100px;
     position: relative;
     overflow: hidden;
+    .swiper-button-next {
+      transform: perspective(1px) translateY(-50%);
+      height: 65px;
+      width: 65px;
+      top: 50%;
+      right: 0;
+      background: #f3f7fb;
+      padding-left: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: center;
+      background-image: none !important;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      border: 1px solid #dce8f3;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      &:before {
+        content: "\F105";
+        font-size: 32px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25%;
+      }
+    }
+    .swiper-button-prev {
+      transform: perspective(1px) translateY(-50%);
+      height: 65px;
+      width: 65px;
+      top: 50%;
+      left: 0;
+      background: #f3f7fb;
+      padding-left: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: center;
+      background-image: none !important;
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      border: 1px solid #dce8f3;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      &:before {
+        content: "\F105";
+        transform: rotate(180deg);
+        font-size: 32px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 25%;
+      }
+    }
 
     .review-nav {
       width: 100%;
       position: absolute;
       top: 50%;
       transform: perspective(1px) translateY(-50%);
-
-      .review-next,
-      .review-prev {
-        position: absolute;
-        cursor: pointer;
-        font-size: 32px;
-        line-height: 1;
-        text-align: center;
-        height: 65px;
-        width: 65px;
-        padding-top: 15px;
-        background: $light;
-        border: 1px solid darken($light, 6%);
-        display: inline-block;
-        &:hover {
-          background: darken($light, 3%);
-        }
+    }
+    .review-next,
+    .review-prev {
+      position: absolute;
+      cursor: pointer;
+      font-size: 32px;
+      line-height: 1;
+      text-align: center;
+      height: 65px;
+      width: 65px;
+      padding-top: 15px;
+      background: $light;
+      border: 1px solid darken($light, 6%);
+      display: inline-block;
+      &:hover {
+        background: darken($light, 3%);
       }
-      .review-prev {
-        left: -2px;
-        padding-right: 5px;
-        border-top-right-radius: 5px;
-        border-bottom-right-radius: 5px;
-      }
-      .review-next {
-        right: -2px;
-        padding-left: 5px;
-        border-top-left-radius: 5px;
-        border-bottom-left-radius: 5px;
-      }
+    }
+    .review-prev {
+      left: -2px;
+      padding-right: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+    }
+    .review-next {
+      right: -2px;
+      padding-left: 5px;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
     }
     .review-item {
       .stars i {
@@ -226,7 +282,7 @@ body {
           position: absolute;
           content: "";
           font-family: "FontAwesome";
-          // background: url("quote.svg");
+          // background: url("../images/quote.svg");
           background-size: contain;
           width: 55px;
           height: 55px;

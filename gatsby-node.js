@@ -51,7 +51,7 @@ exports.createPages = ({ graphql, actions }) => {
 
     // Create paginated posts
     const posts = result.data.allMarkdownRemark.edges.map(post => post.node)
-    const postsPerPage = 1
+    const postsPerPage = 100
     const numPages = Math.ceil(posts.length / postsPerPage)
 
     Array.from({ length: numPages }).forEach((_, i) => {

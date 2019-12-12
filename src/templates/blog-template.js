@@ -12,7 +12,6 @@ class BlogTemplate extends React.Component {
 			fltr =>
 				fltr.node.frontmatter.title === data.markdownRemark.frontmatter.title
 		)
-		console.log(pgnt)
 		return (
 			<Layout>
 				<div class="page-headline">

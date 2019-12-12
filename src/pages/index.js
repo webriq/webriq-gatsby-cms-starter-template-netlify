@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { Container } from "reactstrap"
-// import MySwiper from "../components/swiper/swiper"
+import MySwiper from "../components/swiper/swiper"
 import SampleForm from "../components/form/form"
 import { LazyLoadImage } from "react-lazy-load-image-component"
 import "react-lazy-load-image-component/src/effects/blur.css"
@@ -153,21 +153,23 @@ class IndexPage extends React.Component {
           </div>
         </div>
         <div class="reviews-section">
-          <div class="review-nav">
+          {/*<div class="review-nav">
             <div class="review-prev">
               <i class="fa fa-angle-left" />
             </div>
             <div class="review-next">
               <i class="fa fa-angle-right" />
             </div>
-          </div>
+          </div>*/}
           <div class="container">
             <div class="section-heading text-center">
               <h6 class="font-weight-bold text-uppercase flair">Reviews</h6>
               <h2>What Our Clients Say</h2>
             </div>
+          </div>
+          <MySwiper slidesperview={1}>
             <div class="row justify-content-center">
-              <div class="col-8">
+              <div class="col-8 mx-auto">
                 <div class="pt-5">
                   <div class="review-item text-center">
                     <div class="review-statement bg-light">
@@ -193,7 +195,61 @@ class IndexPage extends React.Component {
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row justify-content-center">
+              <div class="col-8 mx-auto">
+                <div class="pt-5">
+                  <div class="review-item text-center">
+                    <div class="review-statement bg-light">
+                      <p class="text-center">
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo.
+                      </p>
+                    </div>
+                    <div class="pt-5">
+                      <span class="stars">
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                      </span>
+                      <h4 class="mb-0">Jane Doe</h4>
+                      <span class="text-muted">CEO, Company.inc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-8 mx-auto">
+                <div class="pt-5">
+                  <div class="review-item text-center">
+                    <div class="review-statement bg-light">
+                      <p class="text-center">
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium, totam rem
+                        aperiam, eaque ipsa quae ab illo inventore veritatis et
+                        quasi architecto beatae vitae dicta sunt explicabo.
+                      </p>
+                    </div>
+                    <div class="pt-5">
+                      <span class="stars">
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                        <i class="fa fa-star" />
+                      </span>
+                      <h4 class="mb-0">Jane Doe</h4>
+                      <span class="text-muted">CEO, Company.inc</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </MySwiper>
         </div>
         <div class="blog-section bg-light">
           <div class="container">
