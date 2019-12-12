@@ -43,6 +43,7 @@ module.exports = {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
               return allMarkdownRemark.edges.map(edge => {
                 return Object.assign({}, edge.node, {
+                  title: edge.node.frontmatter.title,
                   description: edge.node.frontmatter.excerpt,
                   date: edge.node.frontmatter.publishedDate,
                   url:
@@ -75,7 +76,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "Breglio Long RSS",
+            title: "Gatsby + NetlifyCMS",
           },
         ],
       },
