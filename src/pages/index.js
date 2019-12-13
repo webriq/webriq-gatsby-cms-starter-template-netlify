@@ -372,6 +372,9 @@ class IndexPage extends React.Component {
                       <textarea class="form-control h-auto" required="" />
                       <label>Message</label>
                     </div>
+                    <div class="form-group">
+                      <div className="webriq-recaptcha" />
+                    </div>
                     <div class="form-group mb-4">
                       <button class="btn btn-primary" type="submit">
                         Send Message
