@@ -402,7 +402,10 @@ export const indexPageQuery = graphql`
         description
       }
     }
-    allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/posts/" } }) {
+    allMarkdownRemark(
+      filter: { fileAbsolutePath: { regex: "/posts/" } }
+      limit: 3
+    ) {
       edges {
         node {
           id
