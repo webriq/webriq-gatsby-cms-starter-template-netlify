@@ -68,7 +68,32 @@ exports.createPages = ({ graphql, actions }) => {
     })
   })
 
-  return Promise.all([getPosts])
+  const getCategory = makeRequest(
+    graphql,
+    `query {
+      allMarkdownRemark(filter: { fileAbsolutePath: {regex : "\/posts/"} })
+        {
+          group(field: frontmatter___category) {
+            fieldValue
+          }
+        }
+      }
+    `
+  ).then(result => {
+    // console.log(result.data.allStrapiPosts.edges)
+    // Create individual pages
+    result.data.allMarkdownRemark.group.map(post =>
+      createPage({
+        path: `/${slugify(post.fieldValue).toLowerCase()}`,
+        component: path.resolve(`./src/templates/category.js`),
+        context: {
+          title: post.fieldValue,
+        },
+      })
+    )
+  })
+
+  return Promise.all([getPosts, getCategory])
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -76,7 +101,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   // Create slug field for Strapi posts
   if (node.internal.type === `MarkdownRemark`) {
-    const slugify_title = slugify(node.frontmatter.title, {
+    const slugify_title = slugify(fieldValue, {
       replacement: "-", // replace spaces with replacement
       remove: /[,*+~.()'"!:@]/g, // regex to remove characters
       lower: true, // result in lower case

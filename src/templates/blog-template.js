@@ -19,18 +19,18 @@ class BlogTemplate extends React.Component {
 					title={data.markdownRemark.frontmatter.title}
 					description={data.markdownRemark.frontmatter.excerpt}
 				/>
-				<div class="page-headline">
-					<div class="container">
-						<div class="section-heading text-center">
-							<h6 class="font-weight-bold text-uppercase text-white-50 flair">
+				<div className="page-headline">
+					<div className="container">
+						<div className="section-heading text-center">
+							<h6 className="font-weight-bold text-uppercase text-white-50 flair">
 								Blog
 							</h6>
 							<h1>
 								<strong>{data.markdownRemark.frontmatter.title}</strong>
 								<br />
 							</h1>
-							<span class="text-white-50 small">
-								<i class="fa fa-calendar-o pr-1" />
+							<span className="text-white-50 small">
+								<i className="fa fa-calendar-o pr-1" />
 								{data.markdownRemark.frontmatter.publishedDate}
 							</span>
 						</div>
@@ -38,8 +38,8 @@ class BlogTemplate extends React.Component {
 				</div>
 				<div className="page-content">
 					<Container>
-						<div class="row justify-content-center">
-							<div class="col-md-9">
+						<div className="row justify-content-center">
+							<div className="col-md-9">
 								<div
 									dangerouslySetInnerHTML={{
 										__html: data.markdownRemark.html,
@@ -47,12 +47,12 @@ class BlogTemplate extends React.Component {
 								/>
 							</div>
 						</div>
-						<div class="blog-nav">
-							<div class="row">
-								<div class="col-md-6 text-md-left">
+						<div className="blog-nav">
+							<div className="row">
+								<div className="col-md-6 text-md-left">
 									{pgnt[0].previous !== null ? (
 										<div>
-											<span class="font-weight-bold text-uppercase text-muted d-block small">
+											<span className="font-weight-bold text-uppercase text-muted d-block small">
 												Previous
 											</span>
 											<Link
@@ -65,10 +65,10 @@ class BlogTemplate extends React.Component {
 										</div>
 									) : null}
 								</div>
-								<div class="col-md-6 text-md-right">
+								<div className="col-md-6 text-md-right">
 									{pgnt[0].next !== null ? (
 										<div>
-											<span class="font-weight-bold text-uppercase text-muted d-block small">
+											<span className="font-weight-bold text-uppercase text-muted d-block small">
 												Next
 											</span>
 											<Link
