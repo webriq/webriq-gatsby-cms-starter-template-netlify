@@ -101,7 +101,7 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   // Create slug field for Strapi posts
   if (node.internal.type === `MarkdownRemark`) {
-    const slugify_title = slugify(fieldValue, {
+    const slugify_title = slugify(node.frontmatter.title, {
       replacement: "-", // replace spaces with replacement
       remove: /[,*+~.()'"!:@]/g, // regex to remove characters
       lower: true, // result in lower case
