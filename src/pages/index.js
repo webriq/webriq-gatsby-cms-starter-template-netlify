@@ -21,18 +21,18 @@ class IndexPage extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title
     const siteDescription = this.props.data.site.siteMetadata.description
     const posts = this.props.data.allMarkdownRemark.edges
-    console.log(posts)
+    // console.log(posts)
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={siteTitle} description={siteDescription} />
-        <div class="hero-section bg-light">
+        <div className="hero-section bg-light">
           <Container>
-            <div class="row justify-content-center">
-              <div class="col-md-9">
-                <h1 class="display-4 font-weight-bold flair">
+            <div className="row justify-content-center">
+              <div className="col-md-9">
+                <h1 className="display-4 font-weight-bold flair">
                   Lorem ipsum dolor sit amet
                 </h1>
-                <p class="lead">
+                <p className="lead">
                   Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                   accusantium doloremque laudantium
                 </p>
@@ -40,17 +40,19 @@ class IndexPage extends React.Component {
             </div>
           </Container>
         </div>
-        <div class="about-section">
-          <div class="container">
-            <div class="section-heading text-center">
-              <h6 class="font-weight-bold text-uppercase flair">About Us</h6>
+        <div className="about-section">
+          <div className="container">
+            <div className="section-heading text-center">
+              <h6 className="font-weight-bold text-uppercase flair">
+                About Us
+              </h6>
               <h2>
                 <strong>Lorem ipsum dolor sit amet</strong>
               </h2>
             </div>
             <div>
-              <div class="row justify-content-between align-items-center pt-5">
-                <div class="col-md-5 order-2 order-md-1">
+              <div className="row justify-content-between align-items-center pt-5">
+                <div className="col-md-5 order-2 order-md-1">
                   <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
@@ -63,16 +65,16 @@ class IndexPage extends React.Component {
                     dolore eu fugiat nulla pariatur.
                   </p>
                   <Link
-                    class="btn btn-primary mt-2"
+                    className="btn btn-primary mt-2"
                     role="button"
                     to="/about-us"
                   >
                     Learn More
                   </Link>
                 </div>
-                <div class="col-md-6 order-1 order-md-2 text-center pb-5 pb-md-0">
+                <div className="col-md-6 order-1 order-md-2 text-center pb-5 pb-md-0">
                   <LazyLoadImage
-                    class="img-fluid"
+                    className="img-fluid"
                     src="https://source.unsplash.com/user/neotronimz/600x400"
                     alt="About us"
                   />
@@ -81,19 +83,21 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <div class="services-section bg-light">
-          <div class="container">
-            <div class="section-heading text-center">
-              <h6 class="font-weight-bold text-uppercase flair">Services</h6>
+        <div className="services-section bg-light">
+          <div className="container">
+            <div className="section-heading text-center">
+              <h6 className="font-weight-bold text-uppercase flair">
+                Services
+              </h6>
               <h2>
                 <strong>How Can We Help You?</strong>
               </h2>
             </div>
-            <div class="row justify-content-center pt-5">
-              <div class="col-md-4 mb-5">
-                <div class="p-3">
+            <div className="row justify-content-center pt-5">
+              <div className="col-md-4 mb-5">
+                <div className="p-3">
                   <LazyLoadImage src={bsns} width="100px" />
-                  <h5 class="pt-4 text-uppercase font-weight-bold text-primary">
+                  <h5 className="pt-4 text-uppercase font-weight-bold text-primary">
                     Lorem Ipsum
                   </h5>
                   <p>
@@ -102,10 +106,10 @@ class IndexPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 mb-5">
-                <div class="p-3">
+              <div className="col-md-4 mb-5">
+                <div className="p-3">
                   <LazyLoadImage src={finance} width="100px" alt="Finance" />
-                  <h5 class="pt-4 text-uppercase font-weight-bold text-primary">
+                  <h5 className="pt-4 text-uppercase font-weight-bold text-primary">
                     Lorem Ipsum
                   </h5>
                   <p>
@@ -114,10 +118,10 @@ class IndexPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 mb-5">
-                <div class="p-3">
+              <div className="col-md-4 mb-5">
+                <div className="p-3">
                   <LazyLoadImage src={jigsaw} width="100px" />
-                  <h5 class="pt-4 text-uppercase font-weight-bold text-primary">
+                  <h5 className="pt-4 text-uppercase font-weight-bold text-primary">
                     Lorem Ipsum
                   </h5>
                   <p>
@@ -126,10 +130,10 @@ class IndexPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 mb-5">
-                <div class="p-3">
+              <div className="col-md-4 mb-5">
+                <div className="p-3">
                   <LazyLoadImage src={report} width="100px" />
-                  <h5 class="pt-4 text-uppercase font-weight-bold text-primary">
+                  <h5 className="pt-4 text-uppercase font-weight-bold text-primary">
                     Lorem Ipsum
                   </h5>
                   <p>
@@ -138,10 +142,10 @@ class IndexPage extends React.Component {
                   </p>
                 </div>
               </div>
-              <div class="col-md-4 mb-5">
-                <div class="p-3">
+              <div className="col-md-4 mb-5">
+                <div className="p-3">
                   <LazyLoadImage src={trophy} width="100px" />
-                  <h5 class="pt-4 text-uppercase font-weight-bold text-primary">
+                  <h5 className="pt-4 text-uppercase font-weight-bold text-primary">
                     Lorem Ipsum
                   </h5>
                   <p>
@@ -153,98 +157,98 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </div>
-        <div class="reviews-section">
-          {/*<div class="review-nav">
-            <div class="review-prev">
-              <i class="fa fa-angle-left" />
+        <div className="reviews-section">
+          {/*<div className="review-nav">
+            <div className="review-prev">
+              <i className="fa fa-angle-left" />
             </div>
-            <div class="review-next">
-              <i class="fa fa-angle-right" />
+            <div className="review-next">
+              <i className="fa fa-angle-right" />
             </div>
           </div>*/}
-          <div class="container">
-            <div class="section-heading text-center">
-              <h6 class="font-weight-bold text-uppercase flair">Reviews</h6>
+          <div className="container">
+            <div className="section-heading text-center">
+              <h6 className="font-weight-bold text-uppercase flair">Reviews</h6>
               <h2>What Our Clients Say</h2>
             </div>
           </div>
           <MySwiper slidesperview={1}>
-            <div class="row justify-content-center">
-              <div class="col-8 mx-auto">
-                <div class="pt-5">
-                  <div class="review-item text-center">
-                    <div class="review-statement bg-light">
-                      <p class="text-center">
+            <div className="row justify-content-center">
+              <div className="col-8 mx-auto">
+                <div className="pt-5">
+                  <div className="review-item text-center">
+                    <div className="review-statement bg-light">
+                      <p className="text-center">
                         Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem accusantium doloremque laudantium, totam rem
                         aperiam, eaque ipsa quae ab illo inventore veritatis et
                         quasi architecto beatae vitae dicta sunt explicabo.
                       </p>
                     </div>
-                    <div class="pt-5">
-                      <span class="stars">
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
+                    <div className="pt-5">
+                      <span className="stars">
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
                       </span>
-                      <h4 class="mb-0">Jane Doe</h4>
-                      <span class="text-muted">CEO, Company.inc</span>
+                      <h4 className="mb-0">Jane Doe</h4>
+                      <span className="text-muted">CEO, Company.inc</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-8 mx-auto">
-                <div class="pt-5">
-                  <div class="review-item text-center">
-                    <div class="review-statement bg-light">
-                      <p class="text-center">
+            <div className="row justify-content-center">
+              <div className="col-8 mx-auto">
+                <div className="pt-5">
+                  <div className="review-item text-center">
+                    <div className="review-statement bg-light">
+                      <p className="text-center">
                         Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem accusantium doloremque laudantium, totam rem
                         aperiam, eaque ipsa quae ab illo inventore veritatis et
                         quasi architecto beatae vitae dicta sunt explicabo.
                       </p>
                     </div>
-                    <div class="pt-5">
-                      <span class="stars">
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
+                    <div className="pt-5">
+                      <span className="stars">
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
                       </span>
-                      <h4 class="mb-0">Jane Doe</h4>
-                      <span class="text-muted">CEO, Company.inc</span>
+                      <h4 className="mb-0">Jane Doe</h4>
+                      <span className="text-muted">CEO, Company.inc</span>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row justify-content-center">
-              <div class="col-8 mx-auto">
-                <div class="pt-5">
-                  <div class="review-item text-center">
-                    <div class="review-statement bg-light">
-                      <p class="text-center">
+            <div className="row justify-content-center">
+              <div className="col-8 mx-auto">
+                <div className="pt-5">
+                  <div className="review-item text-center">
+                    <div className="review-statement bg-light">
+                      <p className="text-center">
                         Sed ut perspiciatis unde omnis iste natus error sit
                         voluptatem accusantium doloremque laudantium, totam rem
                         aperiam, eaque ipsa quae ab illo inventore veritatis et
                         quasi architecto beatae vitae dicta sunt explicabo.
                       </p>
                     </div>
-                    <div class="pt-5">
-                      <span class="stars">
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
-                        <i class="fa fa-star" />
+                    <div className="pt-5">
+                      <span className="stars">
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
+                        <i className="fa fa-star" />
                       </span>
-                      <h4 class="mb-0">Jane Doe</h4>
-                      <span class="text-muted">CEO, Company.inc</span>
+                      <h4 className="mb-0">Jane Doe</h4>
+                      <span className="text-muted">CEO, Company.inc</span>
                     </div>
                   </div>
                 </div>
@@ -252,21 +256,21 @@ class IndexPage extends React.Component {
             </div>
           </MySwiper>
         </div>
-        <div class="blog-section bg-light">
-          <div class="container">
-            <div class="section-heading text-center">
-              <h6 class="font-weight-bold text-uppercase flair">blog</h6>
+        <div className="blog-section bg-light">
+          <div className="container">
+            <div className="section-heading text-center">
+              <h6 className="font-weight-bold text-uppercase flair">blog</h6>
               <h2>Latest Posts</h2>
             </div>
-            <div class="row justify-content-around py-5">
+            <div className="row justify-content-around py-5">
               {posts.map(post => (
-                <div class="col-md-6 col-lg-4 mb-4" key={post.node.id}>
-                  <div class="blog-item bg-white h-100">
+                <div className="col-md-6 col-lg-4 mb-4" key={post.node.id}>
+                  <div className="blog-item bg-white h-100">
                     <Link
                       to={slugify(post.node.frontmatter.title).toLowerCase()}
                     >
                       <div
-                        class="blog-image"
+                        className="blog-image"
                         style={{
                           backgroundImage: `url(${
                             post.node.frontmatter.banner
@@ -274,17 +278,17 @@ class IndexPage extends React.Component {
                         }}
                       />
                     </Link>
-                    <div class="blog-text">
+                    <div className="blog-text">
                       <Link
                         to={slugify(post.node.frontmatter.title).toLowerCase()}
                       >
                         <h4>{post.node.frontmatter.title}</h4>
                       </Link>
-                      <p class="pt-2 text-muted">
+                      <p className="pt-2 text-muted">
                         {post.node.frontmatter.excerpt}
                       </p>
-                      <span class="text-muted small">
-                        <i class="fa fa-calendar-o pr-1" />
+                      <span className="text-muted small">
+                        <i className="fa fa-calendar-o pr-1" />
                         {post.node.frontmatter.publishedDate}
                       </span>
                     </div>
@@ -292,30 +296,30 @@ class IndexPage extends React.Component {
                 </div>
               ))}
             </div>
-            <div class="text-center">
-              <Link class="btn btn-primary" role="button" to="/blog">
+            <div className="text-center">
+              <Link className="btn btn-primary" role="button" to="/blog">
                 More from the Blog
               </Link>
             </div>
           </div>
         </div>
-        <div class="contact-section">
-          <div class="container">
-            <div class="row justify-content-between align-items-center">
-              <div class="col-md-5">
-                <div class="section-heading text-left">
-                  <h6 class="font-weight-bold text-uppercase text-left flair">
+        <div className="contact-section">
+          <div className="container">
+            <div className="row justify-content-between align-items-center">
+              <div className="col-md-5">
+                <div className="section-heading text-left">
+                  <h6 className="font-weight-bold text-uppercase text-left flair">
                     Connect
                   </h6>
                   <h2>Get in Touch with Us</h2>
-                  <p class="py-4">
+                  <p className="py-4">
                     Contact us using the following details below, or fill up the
                     form and we'll get back to you shortly.
                   </p>
-                  <ul class="list-unstyled contact-details">
-                    <li class="phone">
+                  <ul className="list-unstyled contact-details">
+                    <li className="phone">
                       <a
-                        class="link-unstyled"
+                        className="link-unstyled"
                         href="tel:+1 234 5678 900"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -323,9 +327,9 @@ class IndexPage extends React.Component {
                         +1 234 5678 900
                       </a>
                     </li>
-                    <li class="email">
+                    <li className="email">
                       <a
-                        class="link-unstyled"
+                        className="link-unstyled"
                         href="mailto:info@yourdomain.com"
                         target="_blank"
                         rel="noopener noreferrer"
@@ -333,50 +337,62 @@ class IndexPage extends React.Component {
                         info@yourdomain.com
                       </a>
                     </li>
-                    <li class="address">
+                    <li className="address">
                       22 Street Name, City Name, United States 1234
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="py-4">
+              <div className="col-md-6">
+                <div className="py-4">
                   <SampleForm
                     form_name="Newsletter Form"
                     form_id="5bcd42f86b63453b251972bc"
                     form_classname="form-newsletter"
                   >
-                    <div class="form-row">
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <input class="form-control" type="text" required="" />
+                    <div className="form-row">
+                      <div className="col-lg-6">
+                        <div className="form-group">
+                          <input
+                            className="form-control"
+                            type="text"
+                            required=""
+                          />
                           <label>First Name</label>
                         </div>
                       </div>
-                      <div class="col-lg-6">
-                        <div class="form-group">
-                          <input class="form-control" type="text" required="" />
+                      <div className="col-lg-6">
+                        <div className="form-group">
+                          <input
+                            className="form-control"
+                            type="text"
+                            required=""
+                          />
                           <label>Last Name</label>
                         </div>
                       </div>
                     </div>
-                    <div class="form-group">
-                      <input class="form-control" type="email" required="" />
+                    <div className="form-group">
+                      <input
+                        className="form-control"
+                        type="email"
+                        required=""
+                      />
                       <label>Email address</label>
                     </div>
-                    <div class="form-group">
-                      <input class="form-control" type="tel" />
+                    <div className="form-group">
+                      <input className="form-control" type="tel" />
                       <label>Phone (optional)</label>
                     </div>
-                    <div class="form-group">
-                      <textarea class="form-control h-auto" required="" />
+                    <div className="form-group">
+                      <textarea className="form-control h-auto" required="" />
                       <label>Message</label>
                     </div>
-                    <div class="form-group">
+                    <div className="form-group">
                       <div className="webriq-recaptcha" />
                     </div>
-                    <div class="form-group mb-4">
-                      <button class="btn btn-primary" type="submit">
+                    <div className="form-group mb-4">
+                      <button className="btn btn-primary" type="submit">
                         Send Message
                       </button>
                     </div>

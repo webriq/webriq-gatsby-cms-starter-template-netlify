@@ -8,10 +8,10 @@ const SecondPage = () => (
 			title="About Us"
 			description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
 		/>
-		<div class="page-headline">
-			<div class="container">
-				<div class="section-heading text-center">
-					<h6 class="font-weight-bold text-uppercase text-white-50 flair">
+		<div className="page-headline">
+			<div className="container">
+				<div className="section-heading text-center">
+					<h6 className="font-weight-bold text-uppercase text-white-50 flair">
 						About Us
 					</h6>
 					<h1>
@@ -20,10 +20,10 @@ const SecondPage = () => (
 				</div>
 			</div>
 		</div>
-		<div class="page-content">
-			<div class="container">
-				<div class="row justify-content-between align-items-center">
-					<div class="col-md-5 order-2 order-md-1">
+		<div className="page-content">
+			<div className="container">
+				<div className="row justify-content-between align-items-center">
+					<div className="col-md-5 order-2 order-md-1">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -35,23 +35,23 @@ const SecondPage = () => (
 							nulla pariatur.
 						</p>
 					</div>
-					<div class="col-md-6 order-1 order-md-2 text-center pb-5 pb-md-0">
+					<div className="col-md-6 order-1 order-md-2 text-center pb-5 pb-md-0">
 						<img
-							class="img-fluid"
+							className="img-fluid"
 							src="https://source.unsplash.com/user/neotronimz/600x400"
 							alt="peaceful"
 						/>
 					</div>
 				</div>
-				<div class="row justify-content-between align-items-center pt-5">
-					<div class="col-md-6 text-center pb-5 pb-md-0">
+				<div className="row justify-content-between align-items-center pt-5">
+					<div className="col-md-6 text-center pb-5 pb-md-0">
 						<img
-							class="img-fluid"
+							className="img-fluid"
 							src="https://source.unsplash.com/user/joshhild/600x400"
 							alt="relaxing"
 						/>
 					</div>
-					<div class="col-md-5">
+					<div className="col-md-5">
 						<p>
 							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
 							eiusmod tempor incididunt ut labore et dolore magna aliqua.

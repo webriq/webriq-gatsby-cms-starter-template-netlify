@@ -8,7 +8,7 @@ const slugify = require("slugify")
 class BlogTemplate extends React.Component {
 	render() {
 		const data = this.props.data
-		console.log(data)
+		// console.log(data)
 		const pgnt = data.allMarkdownRemark.edges.filter(
 			fltr =>
 				fltr.node.frontmatter.title === data.markdownRemark.frontmatter.title

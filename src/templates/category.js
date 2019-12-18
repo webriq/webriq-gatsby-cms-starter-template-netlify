@@ -9,7 +9,7 @@ const slugify = require("slugify")
 class Category extends React.Component {
 	render() {
 		const { data, pageContext } = this.props
-		console.log(this.props)
+		// console.log(this.props)
 		return (
 			<Layout>
 				<SEO
@@ -32,7 +32,6 @@ class Category extends React.Component {
 					<Container>
 						<div className="row justify-content-between">
 							<div className="col-md-7">
-								{console.log(data.allMarkdownRemark)}
 								{data.allMarkdownRemark.edges.map(blog => (
 									<div className="blog-item bg-light" key={blog.node.id}>
 										<div className="row">
